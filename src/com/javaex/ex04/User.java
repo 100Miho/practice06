@@ -1,9 +1,12 @@
 package com.javaex.ex04;
 
 public class User {
-	private String id;
-	private String password;
-	private String name;
+//	private String id;
+//	private String password;
+//	private String name;
+	protected String id;
+	protected String password;
+	protected String name;
 	
 	public User() {}
 	public User(String id, String password, String name) {

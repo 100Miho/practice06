@@ -5,9 +5,10 @@ public class Customer extends User {
 	
 	public Customer() {}
 	public Customer(String id, String password, String name, int point) {
-		setId(id);
-		setPassword(password);
-		setName(name);
+//		setId(id);
+//		setPassword(password);
+//		setName(name);
+		super(id, password, name);
 		this.point=point;
 	}
 	
@@ -20,6 +21,7 @@ public class Customer extends User {
 	
 	@Override
 	public void showInfo() {
-		System.out.printf("#아이디: %s, @패스워드: %s,  #이름: %s, #포인트: %d%n", getName(), getPassword(), getName(), point);
+//		System.out.printf("#아이디: %s, @패스워드: %s,  #이름: %s, #포인트: %d%n", getId(), getPassword(), getName(), point);
+		System.out.printf("#아이디: %s, @패스워드: %s,  #이름: %s, #포인트: %d%n", id, password, name, point);
 	}
 }
